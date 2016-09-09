@@ -223,7 +223,7 @@
 	  console.log('gifs only plz');
 	}
 
-	var API_KEY = getParam('api_key') || "IErgWKUJPytXdjCqIsdNZunPeY0S1o0aXx86Rd3YHpQUhhrozz";
+	var API_KEY = "IErgWKUJPytXdjCqIsdNZunPeY0S1o0aXx86Rd3YHpQUhhrozz";
 
 	var fetch = function fetch(tumblr, offset) {
 	  var myUrls = URLS[tumblr];
