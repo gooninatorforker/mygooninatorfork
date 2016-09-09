@@ -236,7 +236,7 @@
 
 	var fetch = function fetch(tumblr, offset) {
 	  var myUrls = URLS[tumblr];
-	  var url = 'https://api.tumblr.com/v2/blog/' + tumblr + '.tumblr.com/posts?' + 'offset=' + offset + (tumblr == "iwantmygflikethis" ? '&tag=caption' : '') + (tumblr == "dorisconquered" ? '&tag=interracial' : '') + (tumblr == "whitesarethepast" ? '&tag=bbc' : '') + (tumblr == "cuckoldcaps" ? '&tag=cum+eating' : '')+ (tumblr == "pleasecuckoldme-captions" ? '&tag=cuckold' : '')  + (tumblr == "imherbitchboy" ? '&tag=forced+cuckhold' : '') + (tumblr == "glamcuck" ? '&tag=caption' : '') + (tumblr == "specific-filth" ? '&tag=public' : '') + (tumblr == "fuckyeahfriendlyfire" ? '&tag=creampie+fucking' : '') + '&limit=20&' + 'api_key=' + API_KEY;
+	  var url = 'https://api.tumblr.com/v2/blog/' + tumblr + '.tumblr.com/posts?' + 'offset=' + offset + (tumblr == "iwantmygflikethis" ? '&tag=caption' : '') + (tumblr == "dorisconquered" ? '&tag=interracial' : '') + (tumblr == "whitesarethepast" ? '&tag=bbc' : '') + (tumblr == "cuckoldcaps" ? '&tag=cum+eating' : '') + (tumblr == "pleasecuckoldme-captions" ? '&tag=cuckold' : '')  + (tumblr == "imherbitchboy" ? '&tag=forced+cuckhold' : '') + (tumblr == "glamcuck" ? '&tag=caption' : '') + (tumblr == "specific-filth" ? '&tag=public' : '') + (tumblr == "fuckyeahfriendlyfire" ? '&tag=creampie+fucking' : '') + '&limit=20&' + 'api_key=' + API_KEY;
 	  $.ajax({
 	    method: 'GET',
 	    cache: false,
