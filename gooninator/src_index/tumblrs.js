@@ -20,7 +20,8 @@ window.TUMBLRS = [
     "pussyfreeloser",
     "captions4losers",
     "mauishower",
-    "allaboutsize"
+    "allaboutsize",
+    "cheapsk81"
   ]},
 
   {label: "Interracial, BBC superiority, raceplay", items: [
