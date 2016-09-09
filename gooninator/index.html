@@ -23,6 +23,10 @@
       you!
     </p>
 
+    <p>Click one of the categories below to open up a list of suggested tumblrs. Click a tumblr in that list to have it be included in your slideshow. I mostly used caption tumblrs cause they the bomb dot com.</p>
+    <div id="tumblr_categories"></div>
+    <div id="tumblr_list"></div>
+
     <form action="gooninate.html" method="get">
       <p>
       <textarea type="text" rows="6" name="tumblrs" autocorrect="off" spellcheck="false" id="tumblrs" placeholder="TUMBLRS GO HERE">iwantmygflikethis glamcuck slutgfcaps 2sluttyhotwife cuckoldandhotwifecaptions marriedbetaguy ilikecheatinggirls mydirtygirlie modernadultery mygfasaslut cuckoldcaps just-stay-virgin pussyfreeloser captions4losers mauishower whitesarethepast allaboutsize blackcocktakeover blackmydaughter3 breed-better dorisconquered bbcwhitewives69 breedthatwhitepussy breedingblackistheanswer cumcoveredfucking fuckyeahfriendlyfire</textarea>
@@ -94,6 +98,26 @@
   <script src="js/jquery.js"></script>
   <script src="src_index/tumblrs.js"></script>
   <script>
+    var startingCategories = $('#tumblrs').val();
+    var categoriesEl = document.getElementById('tumblr_categories');
+    window.TUMBLRS.map(function(t) {
+      var categoryEl = document.createElement('a');
+      categoryEl.className = "category-label";
+      categoryEl.innerHTML = t.label;
+      categoryEl.onclick = function(e) {
+        e.preventDefault();
+        console.log($('#tumblrs').val());
+        if ($('#tumblrs').val()==startingCategories) {
+            $('#tumblrs').val('');
+        }
+        var listEl = document.getElementById("tumblr_list");
+        listEl.innerHTML = t.items.map(function(item) {
+          return "<tt>" + item + "</tt><br>";
+        }).join('');
+      }
+      categoriesEl.appendChild(categoryEl);
+      categoriesEl.appendChild(document.createElement('wbr'));
+    });
     
     $('#tumblrs').focus();
     $(document).on('click', 'tt', function(e) {
