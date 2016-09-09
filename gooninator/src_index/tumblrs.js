@@ -13,7 +13,8 @@ window.TUMBLRS = [
     "mygfasaslut",
     "cuckoldcaps",
     "specific-filth",
-    "imherbitchboy"
+    "imherbitchboy",
+    "pleasecuckoldme-captions"
   ]},
 
   {label: "Sph and loser humiliation", items: [
