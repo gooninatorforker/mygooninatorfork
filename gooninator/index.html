@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <title>The Gooninator (captions for cuckold, sph, interracial edition)</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img class="logo" src="img/logo2.png" alt="The Gooninator"></h1>
+
+    <p>This page will turn a list of tumblrs into a rapid-fire slideshow of
+    stills that continually changes. While you could hypothetically use it to
+    look at pictures of kittens really fast, it's more useful in, um, other
+    ways.</p>
+
+    <p><strong>Pick a set of tumblogs or enter your own (separated by spaces).</strong></p>
+
+    <p>
+      You can do <strong>literally anything.</strong> I know this list
+      probably doesn't have one (or any) of your favorites in it, but I'm not
+      you!
+    </p>
+
+    <form action="gooninate.html" method="get">
+      <p>
+      <textarea type="text" rows="6" name="tumblrs" autocorrect="off" spellcheck="false" id="tumblrs" placeholder="TUMBLRS GO HERE">iwantmygflikethis glamcuck slutgfcaps 2sluttyhotwife cuckoldandhotwifecaptions marriedbetaguy ilikecheatinggirls mydirtygirlie modernadultery mygfasaslut cuckoldcaps just-stay-virgin pussyfreeloser captions4losers mauishower whitesarethepast allaboutsize blackcocktakeover blackmydaughter3 breed-better dorisconquered bbcwhitewives69 breedthatwhitepussy breedingblackistheanswer cumcoveredfucking fuckyeahfriendlyfire
+      </textarea>
+      
+      <p>
+        <input type="submit" id="submit" value="GOON">
+      </p>
+
+      <p>
+        Timing:
+        <select name="timing_function">
+          <option value="variableSlow">Slow - Recommended! - (3.4-5.4s, varying)</option>
+          <option value="variableMedium">Fast (0.2-1.2s, varying)</option>
+          <option value="variableFast">Really fast (0.0-0.6s, varying)</option>
+          <option value="500">0.5s constant</option>
+          <option value="1000">1.0s constant</option>
+          <option value="2000">2.0s constant</option>
+        </select>
+      </p>
+
+      <p>
+        # images to load at a time:
+        <input type="text" name="num_parallel_image_loads" id="num_parallel_image_loads" value="5">
+        (this shouldn't matter much)
+      </p>
+
+      <p>
+        Image filter:
+        <select name="image_filter">
+          <option value="none">Show everything</option>
+          <option value="gifs_only">GIFs only</option>
+          <option value="stills_only">Stills only</option>
+        </select>
+      </p>
+
+      <p>
+        Minimum image width:
+        <input type="text" name="min_image_width" id="min_image_width" value="500">
+        (if your blog posts smaller image, you may want to decrease this)
+      </p>
+
+      <p>(this can use quite a bit of bandwidth. don't do it on your cell
+      phone if you're not on wifi.)</p>
+
+      
+      <p>
+        Modified from omgsekrit's version because he didn't re-deploy a couple code changes I made and also and cause I wanted to make the default page load tumblr's specific to my kinks and also cause I'm an asshole.
+        <a href="http://reddit.com/u/omgsekrit">http://reddit.com/u/omgsekrit</a>
+        or
+        <a href="http://omgsekrit.tumblr.com">http://omgsekrit.tumblr.com</a><br><br>
+        <a href="http://gooninator.neocities.org">the original gooninator</a>
+      </p>
+    </form>
+
+    <h2>How it works</h2>
+
+    <p>
+      The Gooninator scrapes all image URLs from each tumblog's image posts and continually downloads new random ones to a queue in the browser.
+
+      While this is happening, another loop goes through the queue, advancing
+      to the next image based on the timing function you select. If the images
+      are being displayed faster than they are downloaded, then a random one
+      will be shown from the past 120 images.
+    </p>
+
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="src_index/tumblrs.js"></script>
+  <script>
+    
+    $('#tumblrs').focus();
+    $(document).on('click', 'tt', function(e) {
+      var oldValue = $('#tumblrs').val();
+      if (oldValue.length == 0) {
+        $('#tumblrs').val(e.target.innerHTML);
+      } else {
+        $('#tumblrs').val(oldValue + " " + e.target.innerHTML);
+      }
+    });
+    $('.text-src').click(function(e) {
+      $('#textProgram').val(e.target.id);
+    });
+  </script>
+
+</body>
+</html>

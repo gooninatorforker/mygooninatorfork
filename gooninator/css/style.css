@@ -1,0 +1,70 @@
+.container {
+  max-width: 768px;
+  margin: auto;
+  padding: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+#tumblr_list {
+  border: 1px solid black;
+  max-height: 300px;
+  overflow: auto;
+  padding-left: 4px;
+}
+
+#tumblr_list h3:first-child { margin-top: 4px; }
+#tumblr_list h3 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+#tumblr_grid td {
+  width: 100px;
+}
+
+#tumblrs {
+  width: 50%;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+}
+
+tt { cursor: pointer; }
+
+tt:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.text-src {
+  color: blue;
+  cursor: pointer;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.category-label {
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 0 2px;
+  margin: 2px 4px 2px 0px;
+  white-space: nowrap;
+}
+
+.category-label:hover {
+  background-color: yellow;
+}

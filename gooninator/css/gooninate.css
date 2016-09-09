@@ -1,0 +1,72 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+a {
+  cursor: pointer; color: blue;
+}
+.controls {
+  color: white;
+  padding: 2px;
+  background-color: black;
+  height: 20px;
+  position: absolute;
+}
+.controls div {
+  display: inline-block;
+  border-right: 1px solid #888;
+  padding-right: 2px;
+}
+.controls div:last-child {
+  border-right: none;
+}
+#controls1 { top: 0; right: 0; left: 0; }
+#controls2 {
+  bottom: 0; right: 0; left: 0;
+  text-align: right;
+}
+#controls1 input[type=text] { width: 40px; }
+.timing-control.selected {
+  background-color: yellow;
+}
+#img_container {
+  position: fixed;
+  top: 20px; right: 0; bottom: 20px; left: 0;
+}
+
+#text_container {
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#text {
+  display: table-cell;
+}
+
+#test_program {
+  display: none;
+}
+
+.text-blink {
+  text-align: center; color: white; font-size: 20vmin;
+  vertical-align: middle; transition: opacity 0.1s ease-out;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;
+}
+
+.text-caption {
+  text-align: center; color: white; font-size: 8vmin;
+  vertical-align: bottom; padding-bottom: 20vmin;
+  transition: opacity 0.5s ease-in-out;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;
+}
+
+.text-caption-big {
+  text-align: center; color: white; font-size: 12vmin;
+  vertical-align: middle; transition: opacity 0.1s ease-out;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;
+}

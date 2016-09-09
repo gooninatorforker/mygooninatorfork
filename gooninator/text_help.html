@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>The Gooninator: Text help</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>The Gooninator's Text Feature</h1>
+
+    <p>
+      Text comes from scripts defined by Pastebins. Here's an example:
+    </p>
+
+    <pre>
+setBlinkDuration 300
+setBlinkDelay 100
+setBlinkGroupDelay 1200
+setCaptionDuration 2000
+setCaptionDelay 1200
+
+bigcap YOU LOVE FLUFFY KITTENS
+blink KITTENS / ARE / YOUR / LIFE
+cap Cuddle all the kittens forever because you love them.
+    </pre>
+
+    <p>
+      In the example above, the following things are true:
+
+      <ul>
+        <li>A "caption" will be displayed for 2000ms (2 seconds).</li>
+        <li>After a "caption" disappears, there will be a 1200ms (1.2 second) delay.</li>
+        <li>A "blink" will split the text on slashes and show the segments one at a time, each for 300ms, followed by 100ms of nothing. So you'd see KITTENS for 300ms, then nothing for 100ms, then ARE for 300ms, etc.
+        </li>
+        <li>After each group of blinks (a single line), there will be a 1200ms delay.</li>
+        <li>The script will repeat.</li>
+      </ul>
+    </p>
+
+    <p>
+      Other supported commands:
+
+      <ul>
+        <li><tt>wait 1000</tt> waits for 1 second</li>
+        <li><tt>storePhrase foo bar</tt> stores "foo bar" in a list of phrases. Use the text <tt>$RANDOM_PHRASE</tt> to use a random phrase from the list. For example, <tt>blink $RANDOM_PHRASE</tt>. <a href="http://pastebin.com/cmhePm4N">example</a>
+      </ul>
+    </p>
+
+    <p>
+      There are some raw CSS commands, but I don't have the energy to document
+      them right now and I don't really expect people to use them.
+    </p>
+
+    <p>
+      The result is dumped into a <a href="http://pastebin.com">Pastebin</a>, and the ID of that Pastebin can be put in the "text pastebin ID" field on the main page of the Gooninator.
+    </p>
+
+    <p>
+      That should be enough to get you going. <a href="http://pastebin.com/BhZz6cB7">Here's a real world NSFW example.</a>
+    </p>
+
+</body>
+</html>
