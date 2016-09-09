@@ -14,7 +14,8 @@ window.TUMBLRS = [
     "cuckoldcaps",
     "specific-filth",
     "imherbitchboy",
-    "pleasecuckoldme-captions"
+    "pleasecuckoldme-captions",
+    "bi-caps"
   ]},
 
   {label: "Sph and loser humiliation", items: [
