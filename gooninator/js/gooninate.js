@@ -87,8 +87,11 @@
 	var timer;
 
 	var timingFunctions = {
-	  variableSlow: function variableMedium() {
-	    return (Math.sin(Date.now() / 1000) + 1) / 2 * 2000 + 3000;
+	  variableSlow: function variableSlow() {
+	    return (Math.sin(Date.now() / 1000) + 1) / 2 * 2000 + 3200;
+	  },
+	  variableSlowest: function variableSlowest() {
+	    return (Math.sin(Date.now() / 1000) + 1) / 2 * 3000 + 3500;
 	  },
 	  variableMedium: function variableMedium() {
 	    return (Math.sin(Date.now() / 1000) + 1) / 2 * 1000 + 200;
@@ -111,6 +114,9 @@
 	};
 	document.getElementById('tf-var-slow').onclick = function (e) {
 	  setTiming(e, timingFunctions.variableSlow, 'tf-var-slow');
+	};
+	document.getElementById('tf-var-slowest').onclick = function (e) {
+	  setTiming(e, timingFunctions.variableSlowest, 'tf-var-slowest');
 	};
 	document.getElementById('tf-var-medium').onclick = function (e) {
 	  setTiming(e, timingFunctions.variableMedium, 'tf-var-medium');
@@ -198,6 +204,9 @@
 	  getNextDelay = timingFunctions[getParam('timing_function')] || timingFunctions.variableMedium;
 	  if (getNextDelay == timingFunctions.variableSlow) {
 	    $('#tf-var-slow').addClass('selected');
+	  }
+	  if (getNextDelay == timingFunctions.variableSlowest) {
+	    $('#tf-var-slowest').addClass('selected');
 	  }
 	  if (getNextDelay == timingFunctions.variableMedium) {
 	    $('#tf-var-medium').addClass('selected');
