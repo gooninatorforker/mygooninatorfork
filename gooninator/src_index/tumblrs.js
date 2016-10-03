@@ -11,11 +11,7 @@ window.TUMBLRS = [
     "mydirtygirlie",
     "modernadultery",
     "mygfasaslut",
-    "cuckoldcaps",
-    "specific-filth",
-    "imherbitchboy",
-    "pleasecuckoldme-captions",
-    "bi-caps"
+    "cuckoldcaps"
   ]},
 
   {label: "Sph and loser humiliation", items: [
@@ -24,7 +20,8 @@ window.TUMBLRS = [
     "captions4losers",
     "mauishower",
     "allaboutsize",
-    "cheapsk81"
+    'cum-in-kleenex',
+    'confirmedloser'
   ]},
 
   {label: "Interracial, BBC superiority, raceplay", items: [
