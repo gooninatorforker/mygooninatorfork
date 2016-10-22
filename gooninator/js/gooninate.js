@@ -482,7 +482,7 @@
 	    }
 	    URLS[tumblr] = [];
 	    IMAGES[tumblr] = {};
-	    fetch(tumblr, Math.random() * 140);
+	    fetch(tumblr, Math.random() * 35);
 	  }
 	});
 
