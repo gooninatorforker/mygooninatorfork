@@ -13,7 +13,8 @@ window.TUMBLRS = [
     "mygfasaslut",
     "cuckoldcaps",
     "sissycucksexual",
-    "pornocuck"
+    "pornocuck",
+    "specific-filth"
   ]},
 
   {label: "Sph and loser humiliation", items: [
