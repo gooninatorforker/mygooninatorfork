@@ -14,7 +14,10 @@ window.TUMBLRS = [
     "cuckoldcaps",
     "sissycucksexual",
     "pornocuck",
-    "specific-filth"
+    "specific-filth",
+    "allcuckold",
+    "overwhelmed-by-eroticism",
+    "smoothrocket"
   ]},
 
   {label: "Sph and loser humiliation", items: [
@@ -29,7 +32,7 @@ window.TUMBLRS = [
 
   {label: "Interracial, BBC superiority, raceplay", items: [
     "whitesarethepast",
-    "blackcocktakeover",
+    "blackcocktakeover2",
     "blackmydaughter3",
     "breed-better",
     "dorisconquered",
