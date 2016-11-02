@@ -11,22 +11,24 @@ window.TUMBLRS = [
     "mydirtygirlie",
     "modernadultery",
     "mygfasaslut",
-    "cuckoldcaps",
     "sissycucksexual",
     "pornocuck",
     "specific-filth",
-    "allcuckold",
-    "overwhelmed-by-eroticism",
     "smoothrocket"
   ]},
-
+  {label: "Cuck cleanup", items: [
+    "overwhelmed-by-eroticism",
+    "allcuckold",
+    "cum-in-kleenex",
+    "cuckoldcaps"
+    
+  ]},
   {label: "Sph and loser humiliation", items: [
     "just-stay-virgin",
     "pussyfreeloser",
     "captions4losers",
     "mauishower",
     "allaboutsize",
-    'cum-in-kleenex',
     'confirmedloser'
   ]},
 
