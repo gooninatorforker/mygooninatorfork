@@ -13,6 +13,7 @@ window.TUMBLRS = [
     "mygfasaslut",
     "sissycucksexual",
     "pornocuck",
+    "fantasycaps",
     "specific-filth",
     "smoothrocket"
   ]},
