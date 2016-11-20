@@ -5,10 +5,12 @@ window.TUMBLRS = [
     "glamcuck",
     "slutgfcaps",
     "2sluttyhotwife",
+    "3xpandinghorizons",
     "cuckoldandhotwifecaptions",
     "marriedbetaguy",
     "ilikecheatinggirls",
     "mydirtygirlie",
+    "hotwifeoc",
     "modernadultery",
     "mygfasaslut",
     "sissycucksexual",
@@ -20,6 +22,7 @@ window.TUMBLRS = [
   {label: "Cuck cleanup", items: [
     "overwhelmed-by-eroticism",
     "allcuckold",
+    "cuckoldcreampiecleanup",
     "cum-in-kleenex",
     "cuckoldcaps"
   ]},
@@ -27,6 +30,7 @@ window.TUMBLRS = [
     "just-stay-virgin",
     "pussyfreeloser",
     "captions4losers",
+    "hotwendy79",
     "mauishower",
     "allaboutsize",
     'confirmedloser'
